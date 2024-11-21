@@ -26,7 +26,7 @@ function createDescriptor(desc, qpDefinition) {
         // Remove the old ones
         queryParams.removeObjects(parachuteQueryParams);
 
-        proto.queryParams = queryParams.toArray();
+        proto.queryParams = queryParams.slice();
       }
 
       return klass;
